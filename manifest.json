@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Fix Github",
+  "description": "This extension will remove Github's dark header",
+  "version": "1.0.0",
+  "author": "Kyle Shevlin <kyle.a.shevlin@gmail.com> (http://kyleshevlin.com)",
+  "browser_action": {
+   "default_icon": "fix-github.png"
+  },
+  "permissions": [
+    "background",
+    "tabs",
+    "*://github.com/*"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
